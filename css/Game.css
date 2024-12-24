@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+body {
+    font-family: "Comfortaa", serif;
+    background-color: #272b30;
+    color: #fff;
+}
+
+h5 {
+    color: #fff !important;
+}
+
+header img {
+    max-height: 30vh;
+    object-fit: cover;
+}
+
+nav {
+    background-color: rgb(58, 73, 123) !important;
+    margin-inline: auto;
+    margin-top: -30px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
+ }
+
+ nav .my-link{
+    color: white !important;
+ }
+
+ nav a.active {
+    color: #09c !important;
+ }
+
+ nav a:hover {
+    color: #09c !important;
+    transition: color 0.5s;
+ }
+ 
+ p {
+    color: #fff;
+ }
+
+ .home .card {
+    transition: transform 0.5s, filter 0.5s 0.1s;
+}
+ 
+
+ .home .card:hover {
+    transform: scale(1.05);
+    filter: grayscale(0);
+}
+
+
+.my-badge {
+   background-color: #32383e;
+}
+
+
+.loading {
+position: fixed;
+z-index: 9999;
+inset: 0;
+background-color: #272b30e3;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.loader {
+width: 100px;
+height: 100px;
+border-radius: 50%;
+display: inline-block;
+border-top: 4px solid #fff;
+border-right: 4px solid transparent;
+box-sizing: border-box;
+animation: rotation 1s linear infinite;
+position: relative;
+}
+
+
+.loader::after {
+content: "";
+box-sizing: border-box;
+position: absolute;
+left: 0;
+top: 0;
+width: 100px;
+height: 100px;
+border-radius: 50%;
+border-left: 4px solid #ff3d00;
+border-bottom: 4px solid transparent;
+animation: rotation 0.5s linear infinite reverse;
+}
+
+
+
+@keyframes rotation {
+0% {
+   transform: rotate(0deg);
+}
+100% {
+   transform: rotate(360deg);
+}
+}
